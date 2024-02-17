@@ -153,7 +153,6 @@
                                 @endif
 
                                 <div id="{{ $columnId }}">
-                                    {{-- {{ $formattedState }} --}}
                                 </div>
 
                                 @if ($icon && in_array($iconPosition, [IconPosition::After, 'after']))
