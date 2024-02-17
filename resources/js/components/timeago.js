@@ -15,6 +15,7 @@ export default function timeago({
         id,
         prefix,
         suffix,
+        timer: null,
         getTimeAgo() {
             const date1 = new Date();
             const date2 = new Date(this.strdate * 1000)
@@ -40,10 +41,13 @@ export default function timeago({
         init() {
             document.getElementById(this.id).innerHTML = this.getTimeAgo()
             if(this.interval) {
-                setInterval(() => {
+                this.timer = setInterval(() => {
                     document.getElementById(this.id).innerHTML = this.getTimeAgo()
                 }, this.interval);
             } 
+        },
+        destroy() {
+            clearInterval(this.timer);
         }
     }
 }
