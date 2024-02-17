@@ -27,7 +27,7 @@ class TimeAgoColumn extends TextColumn
     /**
      * Set the value of dateLabel
      *
-     * @return  self
+     * @return self
      */
     public function dateLabel(string $years = 'years', string $months = 'months', string $days = 'days', string $hours = 'hours', string $minutes = 'minutes', string $seconds = 'seconds')
     {
@@ -54,7 +54,7 @@ class TimeAgoColumn extends TextColumn
     /**
      * Set the value of interval in miliseconds
      *
-     * @return  self
+     * @return self
      */
     public function interval(int $interval = 1000)
     {
@@ -74,7 +74,7 @@ class TimeAgoColumn extends TextColumn
     /**
      * Set the value of prefix
      *
-     * @return  self
+     * @return self
      */
     public function prefixText(string $prefix)
     {
@@ -94,7 +94,7 @@ class TimeAgoColumn extends TextColumn
     /**
      * Set the value of suffix
      *
-     * @return  self
+     * @return self
      */
     public function suffixText(string $suffix)
     {

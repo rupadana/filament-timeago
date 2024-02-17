@@ -4,15 +4,9 @@ namespace Rupadana\FilamentTimeago;
 
 use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Assets\Asset;
-use Filament\Support\Assets\Css;
-use Filament\Support\Assets\Js;
 use Filament\Support\Facades\FilamentAsset;
-use Filament\Support\Facades\FilamentIcon;
-use Illuminate\Filesystem\Filesystem;
-use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Rupadana\FilamentTimeago\Commands\FilamentTimeagoCommand;
 
 class FilamentTimeagoServiceProvider extends PackageServiceProvider
 {
@@ -53,7 +47,7 @@ class FilamentTimeagoServiceProvider extends PackageServiceProvider
     protected function getAssets(): array
     {
         return [
-            AlpineComponent::make('filament-timeago', __DIR__ . '/../resources/dist/filament-timeago.js')
+            AlpineComponent::make('filament-timeago', __DIR__ . '/../resources/dist/filament-timeago.js'),
         ];
     }
 }
